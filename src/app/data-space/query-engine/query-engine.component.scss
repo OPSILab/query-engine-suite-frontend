@@ -1,0 +1,108 @@
+:host {
+  display: block;
+}
+
+.ds-panel {
+  border: 1px solid var(--ds-border);
+  border-radius: 12px;
+  background: var(--ds-bg-elevated);
+  overflow: hidden;
+}
+
+.ds-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--ds-border);
+  background: var(--ds-bg-sunken);
+}
+
+.ds-panel__header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ds-tabs {
+  display: inline-flex;
+  padding: 3px;
+  gap: 2px;
+  background: var(--ds-bg);
+  border: 1px solid var(--ds-border);
+  border-radius: 10px;
+}
+
+.ds-tab {
+  padding: 7px 16px;
+  border: none;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  background: transparent;
+  color: var(--ds-text-muted);
+}
+
+.ds-tab--active {
+  background: var(--ds-bg-elevated);
+  color: var(--ds-text);
+  box-shadow: 0 1px 2px var(--ds-shadow);
+}
+
+.ds-panel__body {
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ds-mode-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 620px;
+}
+
+.ds-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.ds-filter-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-top: 12px;
+  border-top: 1px solid var(--ds-border);
+}
+
+.ds-filter-row:first-child {
+  padding-top: 0;
+  border-top: none;
+}
+
+.ds-kv-labels {
+  display: flex;
+  gap: 16px;
+  font-size: 11.5px;
+  color: var(--ds-text-faint);
+
+  span {
+    flex: 1;
+  }
+}
+
+.ds-kv-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.ds-kv-field {
+  flex: 1;
+  min-width: 0;
+}
